@@ -1,0 +1,65 @@
+.discount{
+    background-color: #92c1e9;
+    text-align: center;
+    padding: 13px;
+}
+
+.discount a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.logo{
+    width: 150px;
+
+}
+
+header {
+    display: flex;
+}
+
+.nav-bar{
+    width: 1000px;
+    height: 73px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.nav-bar li{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+
+}
+
+.cat-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+    
+}
+
+.cat-text a{
+    color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card img{
+    width: 80%;
+    margin-left: 30px;
+}
+
+.card h3{
+    text-align: center;
+}
+
