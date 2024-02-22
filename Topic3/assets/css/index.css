@@ -1,13 +1,49 @@
-.container > div{
-    background-color: aqua;
-    width: 150px;
-    margin: 10px;
-    text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 .container {
+  border: solid;
+  border-radius: 15px;
+  width: 325px;
+  height: 450px;
+  background-color: aliceblue;
+}
+
+img {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+a {
+  margin-top: 40px;
+  background-color: aqua;
+    text-decoration: none;
+    width: 50px;
+    height: 60px;
+    border: solid;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 80px;
+
+
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.price {
     display: flex;
-    justify-content: center;
-    height: 600px;
-    align-items: center;
+}
+
+.price p{
+    margin-left: 40px;
+    margin-bottom: 50px;
 }
