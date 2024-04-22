@@ -5,7 +5,7 @@ const sum_price = document.querySelector('.price')
 
 let obj = {}
 let sum = 0
-let say = 1
+
 
 
 add_btn.forEach((b) => {
@@ -17,9 +17,11 @@ add_btn.forEach((b) => {
         
         if(!obj[name]){
             obj[name] = {
-                quantity: say,
+                quantity: 1,
                 price: +b.value
             }
+        }else{
+            obj[name].quantity++
         }
         say++
 
