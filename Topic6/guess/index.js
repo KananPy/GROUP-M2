@@ -60,3 +60,6 @@ choose.addEventListener('click', function(){
 })
 
 
+let arr = []
+
+
