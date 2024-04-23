@@ -23,10 +23,10 @@ add_btn.forEach((b) => {
         }else{
             obj[name].quantity++
         }
-        say++
+      
 
        totalPrice(obj[name].quantity, obj[name].price)
-        console.log(obj);
+        console.log('add',obj);
         
         sum_price.innerText = sum
     })
@@ -38,13 +38,26 @@ del_btn.forEach((b) => {
         console.log('del click');
         sum--
         sum = sum < 0 ? 0 : sum
-        
+        const card_body = b.closest('.card-body')
+        const name = card_body.querySelector('.card-title').textContent
+        removeItem(name)
+        console.log('del',obj);
         sum_price.innerText = sum
     })
 })
 
 function totalPrice(a,b){
      console.log(a*b);
+}
+
+function removeItem(name){
+    if(obj[name]){
+        if(obj[name].quantity ===1){
+            delete obj[name]
+        }else{
+            obj[name].quantity--
+        }
+    }
 }
 
 
