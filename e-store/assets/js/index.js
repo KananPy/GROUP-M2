@@ -2,6 +2,7 @@
 const add_btn = document.querySelectorAll('.add')
 const del_btn = document.querySelectorAll('.del')
 const sum_price = document.querySelector('.price')
+const main = document.querySelector('.container.d-flex')
 
 let obj = {}
 let sum = 0
@@ -12,6 +13,7 @@ add_btn.forEach((b) => {
     b.addEventListener('click', () => {
         console.log('add click');
         sum++
+        
         const card_body = b.closest('.card-body')
         const name = card_body.querySelector('.card-title').textContent
         
@@ -30,6 +32,7 @@ add_btn.forEach((b) => {
         
         sum_price.innerText = sum
     })
+        
 })
 
 
